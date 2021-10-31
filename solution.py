@@ -20,7 +20,7 @@ def is_similar(prev_frame, next_frame):
     img2 = cv2.imread(next_frame)
     processed_img1 = preprocess_image_change_detection(img1, [21])
     processed_img2 = preprocess_image_change_detection(img2, [21])
-    min_contour_area = 7000
+    min_contour_area = 15000
     score, _, _ = compare_frames_change_detection(processed_img1, processed_img2, min_contour_area)
     if score == 0:
         return True
