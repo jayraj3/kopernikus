@@ -1,0 +1,4 @@
+imutils~=0.5.4
+tqdm~=4.62.3
+opencv-python
+glob2

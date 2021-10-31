@@ -73,7 +73,7 @@ def delete_similar_images(path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", help="image directory path to delete similar images")
+    parser.add_argument("path", help="image directory path to delete similar images")
     args = parser.parse_args()
     path = args.path
     print(f"Total deleted images: {delete_similar_images(path)}")
